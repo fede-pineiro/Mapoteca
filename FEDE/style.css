@@ -1,0 +1,216 @@
+html{
+    background-color: rgb(53, 100, 230);
+}
+
+
+
+.flex{
+    display: flex;
+    flex-flow: nowrap;
+    justify-content: space-between;
+    align-items:stretch;
+}
+
+.boton-menu{
+    width: 100px;
+    height: 20px;
+    background-color: rgb(253, 253, 253);
+    padding: 10px;
+    text-align: center;
+    margin: 10px;
+    
+    
+}
+
+.texto{
+    color: rgb(250, 251, 252);
+    font-style: italic;
+}
+.texto1{
+    color: rgb(235, 235, 240);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.texto2{
+    color: lawngreen;
+}
+
+.texto3{
+    color: teal;
+}
+
+.alineado3{
+    text-align: left;
+    color: azure;
+}
+
+
+section{
+    text-align:justify;
+}
+
+h3{
+    color: thistle; text-align: center;
+}
+
+.border {
+    border: solid 2px black;
+}
+
+nav{
+    background-color: rgb(250, 255, 255);
+    
+    width: 130px;
+    margin: 70px;
+    height:min-content
+}
+.flex{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.boton-menu{
+    width: 100px;
+    height: 20px;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    text-align: center;
+    margin: 5px;
+    
+}
+
+#grilla{
+    display: grid;
+    grid-template-areas:
+        "menu header header header" 
+        "menu h1 h1 h1"       
+        "menu section section aside"
+        "menu footer footer footer"
+    ;
+    grid-column-gap: 10px;
+    grid-row-gap: 20px ;
+    grid-template-columns: 20% 1fr 20%;
+
+}
+
+header{
+    grid-area: header;
+}
+
+section{
+    grid-area: section;
+}
+
+aside{
+    grid-area: aside;    
+    width: 200px;  
+    text-align: justify;  
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(235, 235, 240);
+    text-align: right;
+    
+}
+footer{
+    grid-area: footer;
+    
+}
+
+#titulo-h1{
+    color: rgb(255, 30, 0);
+    grid-area: h1;
+    text-align: center;
+    color: rgb(235, 235, 240);
+
+}
+
+p{
+    text-align: center;
+    font-style:initial;
+}
+
+.p1{
+    font-size: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(235, 235, 240);
+}
+
+.p2{
+    text-align: left;
+}
+
+h1{
+    background-color: #63d471;
+    background-image: linear-gradient(315deg, #63d471 0%, #233329 74%);
+    
+}
+
+h2{
+    color: rgb(235, 235, 240);
+    text-align: center;
+}
+h3{
+    color: rgb(235, 235, 240);
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+ul{
+    color: rgb(235, 235, 240);
+}
+
+.sidenav{
+    height: 100%;
+    width: 180px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+    grid-area: menu;
+
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+
+}
+
+.sidenav a:hover{
+    color: #f1f1f1;
+}
+
+.main{
+    margin-left: 160px;
+    padding: 0px 10px;
+}
+
+.galeria{
+    margin-left: 250px;
+    padding: 10px;
+}
+
+.tabla{
+    margin-left: 300px;
+    padding: inherit;
+    color: lavenderblush;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+  }
+.aside2{
+    position:sticky
+    
+}
+
+.flex-img{
+    display: flex;
+    justify-content:space-between;
+    align-content:flex-end;
+}
